@@ -1,11 +1,7 @@
 export default function ResetButton({resetMethod}) {
-    function resetCount() {
-        resetMethod()
-    }
-
     return (
         <div>
-            <button className="resetButton" onClick={resetCount}>Reset</button>
+            <button className="resetButton" onClick={() => resetMethod()}>Reset</button>
         </div>
     )
 }
